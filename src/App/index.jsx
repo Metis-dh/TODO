@@ -8,6 +8,8 @@ import sport from '../Assets/icons/sport.svg';
 import taskPlus from '../Assets/icons/task-plus.svg';
 import moon from '../Assets/icons/moon.svg';
 import userMenu from '../Assets/icons/user-menu.svg';
+import edit from '../Assets/icons/edit.svg';
+import trash from '../Assets/icons/trash.svg';
 
 import avatar from '../Assets/img/header__avatar.png';
 
@@ -98,7 +100,73 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="taskList"></div>
+            <div className="tasks">
+              <div className="taskList">
+                <h3>Активные задачи</h3>
+                <div className="taskListItems">
+                  <div className="taskListItem">
+                    <div className="taskTitle">
+                      <input type="checkbox" />
+                      <p>Приготовить вкусный ужин</p>
+                    </div>
+                    <div className="taskOptions">
+                      <img src={edit} alt="edit" />
+                      <img src={trash} alt="trash" />
+                    </div>
+                  </div>
+                  <div className="taskListItem">
+                    <div className="taskTitle">
+                      <input type="checkbox" />
+                      <p>Устранить засор в раковине</p>
+                    </div>
+                    <div className="taskOptions">
+                      <img src={edit} alt="edit" />
+                      <img src={trash} alt="trash" />
+                    </div>
+                  </div>
+                  <div className="taskListItem">
+                    <div className="taskTitle">
+                      <input type="checkbox" />
+                      <p>Стирка белого белья</p>
+                    </div>
+                    <div className="taskOptions">
+                      <img src={edit} alt="edit" />
+                      <img src={trash} alt="trash" />
+                    </div>
+                  </div>
+                  <div className="taskListItem">
+                    <div className="taskTitle">
+                      <input type="checkbox" />
+                      <p>Разморозить холодильник</p>
+                    </div>
+                    <div className="taskOptions">
+                      <img src={edit} alt="edit" />
+                      <img src={trash} alt="trash" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="taskList">
+                <h3>Завершенные задачи</h3>
+                <div className="taskListItems">
+                  <div className="taskListItem">
+                    <p>Полить цветы</p>
+                    <div className="taskOptions">
+                      <img src={edit} alt="edit" />
+                      <img src={trash} alt="trash" />
+                    </div>
+                  </div>
+                  <div className="taskListItem">
+                    <p>Вызвать сантехника</p>
+                    <div className="taskOptions">
+                      <img src={edit} alt="edit" />
+                      <img src={trash} alt="trash" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="rightSection"></div>
         </div>
