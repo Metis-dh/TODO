@@ -10,6 +10,8 @@ import moon from '../Assets/icons/moon.svg';
 import userMenu from '../Assets/icons/user-menu.svg';
 import edit from '../Assets/icons/edit.svg';
 import trash from '../Assets/icons/trash.svg';
+import clock from '../Assets/icons/clock.svg';
+import calendar from '../Assets/icons/calendar.svg';
 
 import avatar from '../Assets/img/header__avatar.png';
 
@@ -168,7 +170,28 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="rightSection"></div>
+
+          <div className="rightSection">
+            <div className="timeDate">
+              <h4>Такс такс такс</h4>
+              <div className="timeDateContent">
+                <div className="timeSection">
+                  <p>На часах у нас</p>
+                  <div className="time">
+                    <img src={clock} alt="clock" />
+                    <p>12:30:43</p>
+                  </div>
+                </div>
+                <div className="calendarSection">
+                  <p>На часах у нас</p>
+                  <div className="calendar">
+                    <img src={calendar} alt="calendar" />
+                    <p>5 апреля 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
