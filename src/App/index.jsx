@@ -1,21 +1,21 @@
-import logo from '../Assets/icons/logo.svg';
-import plus from '../Assets/icons/plus.svg';
-import logOut from '../Assets/icons/log-out.svg';
-import home from '../Assets/icons/home.svg';
-import users from '../Assets/icons/users.svg';
-import briefcase from '../Assets/icons/briefcase.svg';
-import sport from '../Assets/icons/sport.svg';
-import taskPlus from '../Assets/icons/task-plus.svg';
-import moon from '../Assets/icons/moon.svg';
-import userMenu from '../Assets/icons/user-menu.svg';
-import edit from '../Assets/icons/edit.svg';
-import trash from '../Assets/icons/trash.svg';
-import clock from '../Assets/icons/clock.svg';
-import calendar from '../Assets/icons/calendar.svg';
+import logo from "../Assets/icons/logo.svg";
+import plus from "../Assets/icons/plus.svg";
+import logOut from "../Assets/icons/log-out.svg";
+import home from "../Assets/icons/home.svg";
+import users from "../Assets/icons/users.svg";
+import briefcase from "../Assets/icons/briefcase.svg";
+import sport from "../Assets/icons/sport.svg";
+import taskPlus from "../Assets/icons/task-plus.svg";
+import moon from "../Assets/icons/moon.svg";
+import userMenu from "../Assets/icons/user-menu.svg";
+import edit from "../Assets/icons/edit.svg";
+import trash from "../Assets/icons/trash.svg";
+import clock from "../Assets/icons/clock.svg";
+import calendar from "../Assets/icons/calendar.svg";
 
-import avatar from '../Assets/img/header__avatar.png';
+import avatar from "../Assets/img/header__avatar.png";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
