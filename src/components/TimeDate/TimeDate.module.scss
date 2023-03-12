@@ -1,0 +1,71 @@
+@import "../../App/vars";
+
+.timeDate {
+  padding: 20px;
+  height: 143px;
+
+  background: $background;
+
+  box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08);
+  border-radius: 10px;
+
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: $green-color;
+
+    margin-bottom: 30px;
+  }
+
+  .timeDateContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    p {
+      font-size: 14px;
+      letter-spacing: 0.02em;
+    }
+
+    img {
+      height: 22px;
+      width: 22px;
+    }
+
+    .timeSection {
+      .time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        margin-top: 10px;
+
+        p {
+          font-weight: 600;
+          font-size: 25px;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+
+    .calendarSection {
+      .calendar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        margin-top: 5px;
+
+        p {
+          font-weight: 600;
+          font-size: 25px;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+  }
+}

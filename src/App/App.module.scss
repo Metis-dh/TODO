@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito:wght@300;400;600;700&family=Roboto&display=swap");
+
+@import "./vars";
+@import "./reset";
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+// General Styles
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: $black-text;
+
+  background-color: $main-background;
+}
+
+.wrapper {
+  display: flex;
+}
+
+// Main
+
+.main {
+  width: calc(100% - 330px);
+  margin: 0 auto;
+}

@@ -1,0 +1,111 @@
+@import "../../App/vars";
+
+// Sidebar
+
+.sidebar {
+  position: relative;
+
+  padding: 20px 0 20px 20px;
+  min-width: 230px;
+  min-height: 100vh;
+
+  background-color: $background;
+  filter: drop-shadow(0px 10px 25px rgba(29, 52, 54, 0.08));
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+
+    width: 120px;
+
+    .logoText {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      color: $green-text;
+    }
+  }
+
+  .categories {
+    margin-top: 60px;
+
+    h2 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.4;
+      letter-spacing: 0.03em;
+      color: $green-text;
+    }
+
+    .categoriesList {
+      margin-top: 20px;
+
+      li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 10px;
+
+        width: 100%;
+      }
+
+      li + li {
+        margin-top: 30px;
+      }
+    }
+
+    .plusBtn {
+      display: flex;
+      align-items: center;
+      padding: 0px;
+      column-gap: 10px;
+
+      width: 104px;
+      height: 22px;
+
+      margin-top: 30px;
+
+      font-family: "Nunito", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.025em;
+      color: $green-color;
+
+      border: none;
+      background-color: inherit;
+
+      cursor: pointer;
+    }
+  }
+
+  .logOutBtn {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    column-gap: 10px;
+
+    position: absolute;
+    bottom: 20px;
+    margin-top: 30px;
+
+    width: 120px;
+    height: 22px;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: $black-text;
+
+    border: none;
+    background-color: inherit;
+
+    cursor: pointer;
+  }
+}

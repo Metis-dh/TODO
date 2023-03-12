@@ -1,0 +1,22 @@
+@import "../../App/vars";
+
+// Content
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  margin-top: 15px;
+
+  .leftSection {
+    width: 1070px;
+    max-width: 100%;
+    min-width: 50%;
+  }
+
+  .rightSection {
+    min-width: 473px;
+  }
+}
