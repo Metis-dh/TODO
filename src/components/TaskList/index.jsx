@@ -1,13 +1,13 @@
 import CompletedTasks from "../CompletedTasks";
-import NewTasks from "../NewTasks";
+import ActiveTasks from "../ActiveTasks";
 
-import styles from "./Tasks.module.scss";
+import styles from "./TaskList.module.scss";
 
-const Tasks = () => {
+const TaskList = () => {
   return (
     <div className={styles.tasks}>
       <div className={styles.taskList}>
-        <NewTasks />
+        <ActiveTasks />
       </div>
 
       <div className={styles.taskList}>
@@ -17,4 +17,4 @@ const Tasks = () => {
   );
 };
 
-export default Tasks;
+export default TaskList;

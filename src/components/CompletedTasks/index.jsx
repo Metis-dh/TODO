@@ -1,27 +1,21 @@
-import edit from "../../Assets/icons/edit.svg";
-import trash from "../../Assets/icons/trash.svg";
+import { useSelector } from "react-redux";
+
+import Task from "../Task";
 
 import styles from "./CompletedTasks.module.scss";
 
 const CompletedTasks = () => {
+  const completedTasks = useSelector((state) =>
+    state.todo.taskList.filter((task) => task.completed === true)
+  );
+
   return (
     <>
       <h3>Завершенные задачи</h3>
       <div className={styles.taskListItems}>
-        <div className={styles.taskListItem}>
-          <p>Полить цветы</p>
-          <div className={styles.taskOptions}>
-            <img src={edit} alt="edit" />
-            <img src={trash} alt="trash" />
-          </div>
-        </div>
-        <div className={styles.taskListItem}>
-          <p>Вызвать сантехника</p>
-          <div className={styles.taskOptions}>
-            <img src={edit} alt="edit" />
-            <img src={trash} alt="trash" />
-          </div>
-        </div>
+        {completedTasks.map((task) => (
+          <Task key={task.id} {...task} />
+        ))}
       </div>
     </>
   );
