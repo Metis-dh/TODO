@@ -5,10 +5,10 @@ import avatar from "../../Assets/img/header__avatar.png";
 
 import styles from "./Header.module.scss";
 
-const Header = () => {
+const Header = ({ setOpenModal }) => {
   return (
     <div className={styles.header}>
-      <button className={styles.taskBtn}>
+      <button onClick={() => setOpenModal(true)} className={styles.taskBtn}>
         <img src={taskPlus} alt="new task" />
         Новая задача
       </button>
